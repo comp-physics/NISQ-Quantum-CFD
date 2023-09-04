@@ -4,8 +4,8 @@ __all__ = [
     "u_momentum",
     "v_momentum",
     "get_rhs",
-    "get_coeff_mat_modified",
-    "pres_correct",
+    "get_coeff_mat",
+    "pressure_correct",
     "update_velocity",
     "check_divergence_free"
 ]
@@ -165,7 +165,7 @@ def get_rhs(imax, jmax, dx, dy, rho, u_star, v_star):
 
     return bp
 
-def get_coeff_mat_modified(imax, jmax, dx, dy, rho, d_u, d_v):
+def get_coeff_mat(imax, jmax, dx, dy, rho, d_u, d_v):
 
     N = imax * jmax
     stride = jmax
@@ -264,7 +264,7 @@ def get_coeff_mat_modified(imax, jmax, dx, dy, rho, d_u, d_v):
     return Ap
 
 
-def pres_correct(imax, jmax, rhsp, Ap, p, alpha):
+def pressure_correct(imax, jmax, rhsp, Ap, p, alpha):
     pressure = np.copy(p)  # Initial pressure
     p_prime = np.zeros((imax, jmax))  # Pressure correction matrix
     p_prime_interior = np.linalg.solve(Ap, rhsp)
