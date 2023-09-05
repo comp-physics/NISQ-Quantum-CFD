@@ -23,7 +23,7 @@ This project aims to build a hybrid quantum-classical CFD solver for incompressi
 - 2D Lid-driven cavity flow (Done) 
 
 <p align="center">
-    <img width=80% src=./gallery/cavity_flow.png>
+    <img width=80% src='https://github.com/comp-physics/Hybrid-QuantumCFD/blob/master/Gallery/cavity_flow.png'>
 </p>
 
 
