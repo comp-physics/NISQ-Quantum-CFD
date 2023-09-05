@@ -21,7 +21,9 @@ This project aims to build a hybrid quantum-classical CFD solver for incompressi
 
 ## Benchmarks
 - 2D Lid-driven cavity flow (Done) 
+
 ![fig1](gallery/cavity_flow.png)
+
 - 2D Kármán vortex street (Unstarted)
 - 2D Taylor-Green Vortex (Unstarted)
 
