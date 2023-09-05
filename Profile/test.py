@@ -77,7 +77,7 @@ def v_momentum(imax, jmax, dx, dy, rho, mu, u, v, p, alpha):
     Dw = mu * dy / dx
     Dn = mu * dx / dy
     Ds = mu * dx / dy
-
+        
     A = lambda F, D: max(0, (1-0.1 * abs(F/D))**5)
 
     # compute u_star
