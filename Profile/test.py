@@ -1,4 +1,5 @@
 import numpy as np
+# from functools import lru_cache
 
 def u_momentum(imax, jmax, dx, dy, rho, mu, u, v, p, velocity, alpha):
     u_star = np.zeros((imax + 1, jmax))
@@ -67,6 +68,7 @@ def u_momentum(imax, jmax, dx, dy, rho, mu, u, v, p, velocity, alpha):
     u_star[:, jmax - 1] = velocity  # top wall
 
     return u_star, d_u
+
 
 def v_momentum(imax, jmax, dx, dy, rho, mu, u, v, p, alpha):
 
