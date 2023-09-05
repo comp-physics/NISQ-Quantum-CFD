@@ -22,7 +22,11 @@ This project aims to build a hybrid quantum-classical CFD solver for incompressi
 ## Benchmarks
 - 2D Lid-driven cavity flow (Done) 
 
-![fig1](./gallery/cavity_flow.png)
+<p align="center">
+    <img width=80% src=./gallery/cavity_flow.png>
+</p>
+
+
 
 - 2D Kármán vortex street (Unstarted)
 - 2D Taylor-Green Vortex (Unstarted)
@@ -32,7 +36,8 @@ This project aims to build a hybrid quantum-classical CFD solver for incompressi
 ### Runtime Profile
 1. Run `python -m cProfile -o out.prof ./test.py ` and then  visualize it with `snakeviz out.prof `
 2. Run `pycallgraph graphviz -- ./test.py` in the `profile` folder to generate a call graph 
+3. Add  `@profile` before `def main():` then run the line by line profiler with `kernprof -l main.py`. One can visualize it with `python -m line_profiler -rmt "test.py.lprof"` 
 
 
 ### Memory Profile
-1. 
+1. Add  `@profile` before `def main():` then run `python -m memory_profiler test.py`

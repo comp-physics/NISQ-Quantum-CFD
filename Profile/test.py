@@ -308,7 +308,7 @@ def check_divergence_free(imax, jmax, dx, dy, u, v):
 
     return div
 
-
+# @profile
 def main():
     
     imax = 30                        # grid size in x-direction
