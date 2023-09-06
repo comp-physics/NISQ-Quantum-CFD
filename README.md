@@ -10,7 +10,9 @@ This project aims to build a hybrid quantum-classical CFD solver for incompressi
 
 ## Linear system
 ### Classical Solver
-- ?
+- Jacobi
+- Gauss-Seidel 
+- Successive Over-relaxation (SOR)
 
 ### Quantum Solver
 - VQE
@@ -20,16 +22,16 @@ This project aims to build a hybrid quantum-classical CFD solver for incompressi
 
 
 ## Benchmarks
-- 2D Lid-driven cavity flow (Done) 
+- [x] 2D Lid-driven cavity flow (Done) 
 
 <p align="center">
     <img width=80% src='https://github.com/comp-physics/Hybrid-QuantumCFD/blob/master/Gallery/cavity_flow.png'>
 </p>
 
 
+- [ ]  2D Kármán vortex street (Unstarted)
 
-- 2D Kármán vortex street (Unstarted)
-- 2D Taylor-Green Vortex (Unstarted)
+- [ ]  2D Taylor-Green Vortex (Unstarted)
 
 
 ## Performance
