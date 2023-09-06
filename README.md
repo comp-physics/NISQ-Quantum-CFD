@@ -4,8 +4,8 @@ This project aims to build a hybrid quantum-classical CFD solver for incompressi
 
 
 ## CFD setup
-- SIMPLE algorithm
-- PISO algorithm
+- SIMPLE 
+- PISO 
 
 
 ## Linear system
@@ -24,10 +24,9 @@ This project aims to build a hybrid quantum-classical CFD solver for incompressi
 ## Benchmarks
 - [x] 2D Lid-driven cavity flow (Done) 
 
-<p align="center">
-    <img width=80% src='https://github.com/comp-physics/Hybrid-QuantumCFD/blob/master/Gallery/cavity_flow.png'>
-</p>
-
+<div align="center">
+<img src="https://github.com/comp-physics/Hybrid-QuantumCFD/blob/master/Gallery/cavity_flow.png" height="260px"> <img src="https://github.com/comp-physics/Hybrid-QuantumCFD/blob/master/Benchmark/Re100/UBench_Re100_Grid60x60.png" height="260px">
+</div>
 
 - [ ]  2D Kármán vortex street (Unstarted)
 
