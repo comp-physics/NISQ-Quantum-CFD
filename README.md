@@ -10,15 +10,15 @@ This project aims to build a hybrid quantum-classical CFD solver for incompressi
 
 ## Linear system
 ### Classical Solver
-- Jacobi
-- Gauss-Seidel 
-- Successive Over-relaxation (SOR)
+- [x]  Jacobi
+- [ ] Gauss-Seidel 
+- [ ] Successive Over-relaxation (SOR)
 
 ### Quantum Solver
-- VQE
-- VQLS
-- QAOA
-- HHL
+- [ ] VQE
+- [x] VQLS
+- [x] QAOA (?)
+- [ ] HHL
 
 
 ## Benchmarks

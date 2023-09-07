@@ -1,5 +1,6 @@
 import numpy as np
 
+
 __all__ = [
     "u_momentum",
     "v_momentum",
@@ -317,6 +318,8 @@ def check_divergence_free(imax, jmax, dx, dy, u, v):
             div[i, j] = (1/dx) * (u[i, j] - u[i+1, j]) + (1/dy) * (v[i, j] - v[i, j+1])
 
     return div
+
+
 
 
 
