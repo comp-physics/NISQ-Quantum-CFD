@@ -4,20 +4,21 @@ This project aims to build a hybrid quantum-classical CFD solver for incompressi
 
 
 ## CFD setup
-- SIMPLE 
-- PISO 
+- [x] SIMPLE
+- [ ] SIMPLEC 
+- [ ] PISO 
 
 
 ## Linear system
 ### Classical Solver
 - [x]  Jacobi
-- [ ] Gauss-Seidel 
-- [ ] Successive Over-relaxation (SOR)
+- [x] Gauss-Seidel 
+- [x] Successive Over-relaxation (SOR)
+- [x] Penta-diagonal solver
 
 ### Quantum Solver
-- [ ] VQE
+- [x] VQE
 - [x] VQLS
-- [x] QAOA (?)
 - [ ] HHL
 
 
