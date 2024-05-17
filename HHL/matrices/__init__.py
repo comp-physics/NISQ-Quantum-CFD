@@ -15,5 +15,6 @@
 from .linear_system_matrix import LinearSystemMatrix
 from .numpy_matrix import NumPyMatrix
 from .tridiagonal_toeplitz import TridiagonalToeplitz
+from .discrete_laplacian import DiscreteLaplacian
 
 __all__ = ["LinearSystemMatrix", "NumPyMatrix", "TridiagonalToeplitz"]
