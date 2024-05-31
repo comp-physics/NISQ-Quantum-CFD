@@ -1,6 +1,6 @@
 # Hybrid-QuantumCFD
 
-This project aims to build a hybrid quantum-classical CFD solver for incompressible flow problems.
+This project builds a hybrid quantum-classical CFD solver for incompressible flow problems in the NISQ regime.
 
 
 ## CFD setup
