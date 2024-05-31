@@ -5,15 +5,15 @@ This project builds a hybrid quantum-classical CFD solver for incompressible flo
 ## Linear system
 
 ### Classical Solver
-- [x] Jacobi
-- [x] Gauss-Seidel 
-- [x] Successive Over-relaxation (SOR)
-- [x] Penta-diagonal solver
+- Jacobi
+- Gauss-Seidel 
+- Successive Over-relaxation (SOR)
+- Penta-diagonal solver
 
 ### Quantum Solver
-- [x] VQE
-- [x] VQLS
-- [x] HHL
+- VQE
+- VQLS
+- HHL
 
 ## 2D Lid-driven Cavity Benchmark
 
