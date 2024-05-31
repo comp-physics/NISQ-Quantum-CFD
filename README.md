@@ -2,16 +2,10 @@
 
 This project builds a hybrid quantum-classical CFD solver for incompressible flow problems in the NISQ regime.
 
-
-## CFD setup
-- [x] SIMPLE
-- [ ] SIMPLEC 
-- [ ] PISO 
-
-
 ## Linear system
+
 ### Classical Solver
-- [x]  Jacobi
+- [x] Jacobi
 - [x] Gauss-Seidel 
 - [x] Successive Over-relaxation (SOR)
 - [x] Penta-diagonal solver
@@ -19,23 +13,18 @@ This project builds a hybrid quantum-classical CFD solver for incompressible flo
 ### Quantum Solver
 - [x] VQE
 - [x] VQLS
-- [ ] HHL
-
+- [x] HHL
 
 ## Benchmarks
-- [x] 2D Lid-driven cavity flow (Done) 
+
+2D Lid-driven cavity flow (Done) 
 
 <div align="center">
 <img src="https://github.com/comp-physics/Hybrid-QuantumCFD/blob/master/Benchmark/Re100/Stream_Re100_Grid20x20.png" height="300px"> <img src="https://github.com/comp-physics/Hybrid-QuantumCFD/blob/master/Benchmark/Re100/UBench_Re100_Grid60x60.png" height="300px">
 </div>
 
-
-- [ ]  2D Kármán vortex street (Unstarted)
-
-- [ ]  2D Taylor-Green Vortex (Unstarted)
-
-
 ## Performance
+
 ### Runtime Profile
 1. Run `python -m cProfile -o out.prof ./test.py ` and then  visualize it with `snakeviz out.prof `
 2. Run `pycallgraph graphviz -- ./test.py` in the `profile` folder to generate a call graph 
@@ -43,4 +32,5 @@ This project builds a hybrid quantum-classical CFD solver for incompressible flo
 
 
 ### Memory Profile
-1. Add  `@profile` before `def main():` then run `python -m memory_profiler test.py`
+
+Add  `@profile` before `def main():` then run `python -m memory_profiler test.py`
