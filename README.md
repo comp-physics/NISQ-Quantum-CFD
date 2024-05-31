@@ -1,4 +1,4 @@
-# Hybrid-QuantumCFD
+## NISQ Quantum CFD
 
 This project builds a hybrid quantum-classical CFD solver for incompressible flow problems in the NISQ regime.
 
