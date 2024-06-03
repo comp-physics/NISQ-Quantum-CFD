@@ -18,8 +18,9 @@ This project builds a hybrid quantum-classical CFD solver for incompressible flo
 ## 2D Lid-driven Cavity Benchmark
 
 <div align="center">
-<img src="https://github.com/comp-physics/Hybrid-QuantumCFD/blob/master/Benchmark/Re100/Stream_Re100_Grid20x20.png" height="300px"> <img src="https://github.com/comp-physics/Hybrid-QuantumCFD/blob/master/Benchmark/Re100/UBench_Re100_Grid60x60.png" height="300px">
+<img src="https://github.com/comp-physics/NISQ-Quantum-CFD/Benchmark/benchmark-Re100.pdf" height="300px"> 
 </div>
+
 
 ## Performance
 
