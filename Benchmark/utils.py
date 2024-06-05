@@ -15,7 +15,8 @@ def u_momentum(imax, jmax, dx, dy, rho, mu, u, v, p, velocity, alpha):
     u_star = np.zeros((imax + 1, jmax))
     d_u = np.zeros((imax + 1, jmax))
 
-    De = mu * dy / dx  # convective coefficients
+    # Convective coefficients
+    De = mu * dy / dx  
     Dw = mu * dy / dx
     Dn = mu * dx / dy
     Ds = mu * dx / dy
@@ -23,7 +24,7 @@ def u_momentum(imax, jmax, dx, dy, rho, mu, u, v, p, velocity, alpha):
     def A(F, D):
         return max(0, (1 - 0.1 * abs(F / D))**5)
 
-    # compute u_star
+    # Compute u_star
     for i in range(1, imax):
         for j in range(1, jmax - 1):
             Fe = 0.5 * rho * dy * (u[i + 1, j] + u[i, j])
@@ -41,9 +42,9 @@ def u_momentum(imax, jmax, dx, dy, rho, mu, u, v, p, velocity, alpha):
 
             u_star[i, j] = alpha / aP * ((aE * u[i + 1, j] + aW * u[i - 1, j] + aN * u[i, j + 1] + aS * u[i, j - 1]) + pressure_term) + (1 - alpha) * u[i, j]
 
-            d_u[i, j] = alpha * dy / aP  # refer to Versteeg CFD book
+            d_u[i, j] = alpha * dy / aP 
 
-    # set d_u for top and bottom BCs
+    # Set d_u for top and bottom BCs
     for i in range(1, imax):
         j = 0  # bottom
         Fe = 0.5 * rho * dy * (u[i + 1, j] + u[i, j])
@@ -72,10 +73,10 @@ def u_momentum(imax, jmax, dx, dy, rho, mu, u, v, p, velocity, alpha):
         d_u[i, j] = alpha * dy / aP
 
     # Apply BCs
-    u_star[0, :jmax] = -u_star[1, :jmax]  # left wall
+    u_star[0, :jmax] = -u_star[1, :jmax]            # left wall
     u_star[imax, :jmax] = -u_star[imax - 1, :jmax]  # right wall
-    u_star[:, 0] = 0.0  # bottom wall
-    u_star[:, jmax - 1] = velocity  # top wall
+    u_star[:, 0] = 0.0                              # bottom wall
+    u_star[:, jmax - 1] = velocity                  # top wall
 
     return u_star, d_u
 
@@ -84,14 +85,15 @@ def v_momentum(imax, jmax, dx, dy, rho, mu, u, v, p, alpha):
     v_star = np.zeros((imax, jmax+1))
     d_v = np.zeros((imax, jmax+1))
 
-    De = mu * dy / dx  # convective coefficients
+    # Convective coefficients
+    De = mu * dy / dx  
     Dw = mu * dy / dx
     Dn = mu * dx / dy
     Ds = mu * dx / dy
 
     A = lambda F, D: max(0, (1-0.1 * abs(F/D))**5)
 
-    # compute u_star
+    # Compute u_star
     for i in range(1, imax-1):
         for j in range(1, jmax):
             Fe = 0.5 * rho * dy * (u[i+1, j] + u[i+1, j-1])
@@ -109,10 +111,9 @@ def v_momentum(imax, jmax, dx, dy, rho, mu, u, v, p, alpha):
 
             v_star[i, j] = alpha / aP * (aE * v[i+1, j] + aW * v[i-1, j] + aN * v[i, j+1] + aS * v[i, j-1] + pressure_term) + (1-alpha) * v[i, j]
 
-            d_v[i, j] = alpha * dx / aP  # refer to Versteeg CFD book
+            d_v[i, j] = alpha * dx / aP  
 
-    # set d_v for left and right BCs
-    # Apply BCs
+    # Set d_v for left and right BCs
     for j in range(1, jmax):
         i = 0  # left BC
         Fe = 0.5 * rho * dy * (u[i+1, j] + u[i+1, j-1])
@@ -140,7 +141,7 @@ def v_momentum(imax, jmax, dx, dy, rho, mu, u, v, p, alpha):
         aP = aE + aW + aN + aS + (Fe - Fw) + (Fn - Fs)
         d_v[i, j] = alpha * dx / aP
 
-    # apply BCs
+    # Apply BCs
     v_star[0, :] = 0.0  # left wall
     v_star[imax-1, :] = 0.0  # right wall
     v_star[:, 0] = -v_star[:, 1]  # bottom wall
@@ -318,8 +319,4 @@ def check_divergence_free(imax, jmax, dx, dy, u, v):
             div[i, j] = (1/dx) * (u[i, j] - u[i+1, j]) + (1/dy) * (v[i, j] - v[i, j+1])
 
     return div
-
-
-
-
 
