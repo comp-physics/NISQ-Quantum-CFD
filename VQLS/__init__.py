@@ -12,7 +12,7 @@
 
 """
 =======================================
-Variational Quantum Linear Solver
+Variational Quantum Linear Solver Qiskit 1.0
 =======================================
 """
 
