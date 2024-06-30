@@ -1,8 +1,7 @@
 ## Incompressible Navier-Stokes solve on noisy quantum hardware via a hybrid quantum-classical scheme
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#license)
-
-[Preprint here (arXiv)](https://arxiv.org/abs/2406.00280)
+[![arXiv](https://img.shields.io/badge/arXiv-2406.00280-b31b1b.svg)](https://arxiv.org/abs/2406.00280)
 
 __Authors:__ Zhixin Song, Robert Deaton, Bryan Gard, Spencer H. Bryngelson
 
