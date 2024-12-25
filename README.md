@@ -6,7 +6,7 @@
 
 This is the code that accompanies the following paper:
 
-Song, Z., Deaton, R., Gard, B., & Bryngelson, S. H. (2025). Incompressible Navier–Stokes solve on noisy quantum hardware via a hybrid quantum–classical scheme. _Computers & Fluids_, __288__, 106507.
+Song, Z., Deaton, R., Gard, B., & Bryngelson, S. H. (2025). Incompressible Navier–Stokes solve on noisy quantum hardware via a hybrid quantum–classical scheme. _Computers & Fluids_, __288__, 106507. doi: [10.1016/j.compfluid.2024.106507](https://doi.org/10.1016/j.compfluid.2024.106507)
 
 Abstract
 
