@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#license)
 
-## Introduction
+### Introduction
 
 This is the code that accompanies the following paper:
 
